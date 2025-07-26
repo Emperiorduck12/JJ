@@ -1,4 +1,205 @@
-<!DOCTYPE html>
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumpin' Jambalaya - Catering Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Black, Dark Burgundy, White Palette */
+        .brand-black { color: #1a1a1a; }
+        .brand-burgundy { color: #800020; }
+        .bg-brand-black { background-color: #1a1a1a; }
+        .bg-brand-burgundy { background-color: #800020; }
+        .border-brand-burgundy { border-color: #800020; }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+        }
+        .link-hover:hover {
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-[#333] p-4 sm:p-6 md:p-8">
 
+    <div class="max-w-4xl mx-auto border-4 border-brand-burgundy rounded-xl bg-white shadow-2xl p-6 sm:p-8 md:p-12">
+        
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold brand-black tracking-wider">JUMPIN' JAMBALAYA</h1>
+            <p class="text-lg md:text-xl brand-burgundy mt-2">Creole-Inspired Cocktails & Event Bar Services</p>
+        </header>
 
+        <!-- Introduction -->
+        <section class="mb-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold brand-black mb-4">Your Premier Bar Experience</h2>
+            <p class="text-base md:text-lg max-w-3xl mx-auto leading-relaxed text-gray-700">
+                At Jumpin' Jambalaya, we believe every event deserves a bar experience as unique and vibrant as your celebration. Our expert team crafts unforgettable moments with Creole-inspired cocktails and seamless service, ensuring your guests are delighted from the first sip to the last. All quotes will include applicable sales tax and gratuity.
+            </p>
+        </section>
+
+        <!-- Curated Bar Packages -->
+        <section class="mb-12">
+            <div class="bg-brand-black text-white p-4 rounded-t-lg">
+                <h2 class="text-3xl font-bold text-center text-white">Our Curated Bar Packages</h2>
+            </div>
+            <div class="overflow-x-auto bg-white p-4 rounded-b-lg shadow-lg">
+                <table class="w-full text-left">
+                    <thead class="border-b-2 border-gray-200">
+                        <tr>
+                            <th class="p-3 text-sm font-semibold tracking-wide text-brand-black">Package</th>
+                            <th class="p-3 text-sm font-semibold tracking-wide text-brand-black">Investment & Minimums</th>
+                            <th class="p-3 text-sm font-semibold tracking-wide text-brand-black">Experience Includes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-3 font-bold brand-burgundy">Sip & Serve</td>
+                            <td class="p-3">$525 flat + $375 (5 hrs)</td>
+                            <td class="p-3">Host provides alcohol. Includes 1 MAST 12 Certified Bartender, essential tools, ice, garnishes, and disposable drinkware.</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-3 font-bold brand-burgundy">Hosted Bar: Standard</td>
+                            <td class="p-3">$30/guest • 4 hrs min</td>
+                            <td class="p-3">A comprehensive bar featuring spirits, wine, beer, and mixers. Includes 2 signature cocktails, elegant décor, and 1 dedicated bartender per 75 guests.</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-3 font-bold brand-burgundy">Premium Hosted Bar</td>
+                            <td class="p-3">$40/guest • 5 hrs min</td>
+                            <td class="p-3">Elevate your event with 3 signature cocktails, top-shelf spirits, upscale styling, and uniformed bartenders providing refined service.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-bold brand-burgundy">Bayou Luxe Experience</td>
+                            <td class="p-3">From $2,750 • 6 hrs min</td>
+                            <td class="p-3">The ultimate package: 2 portable bar carts, 2 expert bartenders, 4 custom signature cocktails, mocktails, infused water station, premium décor, and complete cleanup service.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Signature Cocktails -->
+        <section class="mb-12">
+             <div class="bg-brand-burgundy text-white p-4 rounded-lg text-center">
+                <h2 class="text-3xl font-bold">Signature Craft Cocktails</h2>
+                <p class="mt-2">Our unique Creole-inspired concoctions designed to captivate your guests.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="card p-6"><h3 class="text-xl font-bold brand-black">Bayou Breeze</h3><p>Gin, lemon, mint, soda</p></div>
+                <div class="card p-6"><h3 class="text-xl font-bold brand-black">Cajun Crush</h3><p>Bourbon, peach purée, jalapeño</p></div>
+                <div class="card p-6"><h3 class="text-xl font-bold brand-black">Creole Sunset</h3><p>Vodka, mango, ginger syrup</p></div>
+                <div class="card p-6"><h3 class="text-xl font-bold brand-black">Jambalaya Jazz</h3><p>Rye, paprika syrup, citrus twist</p></div>
+            </div>
+        </section>
+
+        <!-- Enhancements & Rentals -->
+        <section class="mb-12">
+            <div class="bg-gray-100 p-8 rounded-lg shadow-inner">
+                <h2 class="text-3xl font-bold brand-black text-center mb-6">Enhancements & Rentals</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                    <div class="bg-white p-4 rounded-lg shadow"><p class="font-bold text-lg">Additional Bartender</p><p class="brand-burgundy text-xl font-semibold">$75/hr <span class="text-sm text-gray-500">(3 hrs min)</span></p></div>
+                    <div class="bg-white p-4 rounded-lg shadow"><p class="font-bold text-lg">Barback</p><p class="brand-burgundy text-xl font-semibold">$25/hr</p></div>
+                    <div class="bg-white p-4 rounded-lg shadow"><p class="font-bold text-lg">Premium Glassware</p><p class="brand-burgundy text-xl font-semibold">$2/guest</p></div>
+                    <div class="bg-white p-4 rounded-lg shadow"><p class="font-bold text-lg">Eco-Friendly Ware</p><p class="brand-burgundy text-xl font-semibold">$1.25/guest</p></div>
+                    <div class="bg-white p-4 rounded-lg shadow"><p class="font-bold text-lg">Custom Cocktail Design</p><p class="brand-burgundy text-xl font-semibold">$50/recipe</p></div>
+                    <div class="bg-white p-4 rounded-lg shadow"><p class="font-bold text-lg">Portable Bar Cart</p><p class="brand-burgundy text-xl font-semibold">$300</p></div>
+                    <div class="bg-white p-4 rounded-lg shadow sm:col-span-2 lg:col-span-3"><p class="font-bold text-lg">Dual Cart Bundle</p><p class="brand-burgundy text-xl font-semibold">$550</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Non-Alcoholic & Event Stations -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold brand-black text-center mb-6">Refreshment Stations</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card p-6 border-t-4 border-brand-burgundy"><h3 class="text-2xl font-bold brand-black mb-3">Mocktail Station – $150</h3><ul class="list-disc list-inside space-y-2 text-gray-700"><li>Up to three rotating seasonal mocktails</li><li>Pre-batched in 3-gallon dispensers</li><li>Fresh garnishes and branded signage</li><li>Service: one attendant (2 hrs) for refreshes</li><li>Full setup, breakdown, and cleanup</li></ul></div>
+                <div class="card p-6 border-t-4 border-gray-300"><h3 class="text-2xl font-bold brand-black mb-3">Infused Water Bar – $100</h3><ul class="list-disc list-inside space-y-2 text-gray-700"><li>Two to three curated fruit & herb infusions</li><li>Three 2-gallon glass dispensers with spigots</li><li>Elevated dispenser stands and minimalist labels</li><li>Service: attendant check-in (1 hr) to refresh</li><li>Includes one complimentary refill</li></ul></div>
+            </div>
+            <div class="mt-8 bg-gray-100 p-6 rounded-lg text-center">
+                <h4 class="text-xl font-bold brand-black mb-3">Other Refreshments</h4>
+                <div class="text-gray-700 space-y-1">
+                    <p><strong>Gourmet Coffee & Tea Station</strong> – Price upon request</p>
+                    <p><strong>Sparkling Lemonade & Iced Tea Bar</strong> – Price upon request</p>
+                    <p><strong>Assorted Premium Sodas & Bottled Water</strong> – Price upon request</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="mb-12 text-center bg-gray-100 p-8 rounded-lg">
+            <h2 class="text-3xl font-bold brand-black mb-4">What Our Clients Say</h2>
+            <blockquote class="max-w-2xl mx-auto">
+                <p class="text-lg italic text-gray-700">“For our corporate holiday party, Jumpin Jambalaya provided seamless service and unique drinks that perfectly matched our theme. Their attention to detail was exceptional.”</p>
+                <cite class="block font-semibold text-brand-burgundy mt-4">— Art Perez, Corporate Event Planner</cite>
+            </blockquote>
+        </section>
+
+        <!-- Commitment & Important Information -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold brand-black text-center mb-6">Our Commitment & Important Information</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-brand-burgundy">
+                <h4 class="font-bold text-xl brand-black mb-3">Included in All Services:</h4>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                    <li>MAST 12 Certified Bartenders</li>
+                    <li>Comprehensive Host Planning Checklist</li>
+                    <li>All necessary ice, bar tools, garnishes, and a sanitation kit</li>
+                </ul>
+                <h4 class="font-bold text-xl brand-black mb-3">Product Examples:</h4>
+                <p class="text-gray-700 mb-2"><strong>Standard Spirits:</strong> Smirnoff, Bacardi, Jim Beam, Seagram's Gin</p>
+                <p class="text-gray-700 mb-2"><strong>Premium Spirits:</strong> Grey Goose, Patrón, Maker's Mark, Hendrick's Gin</p>
+                <p class="text-gray-700 mb-6"><strong>Beer & Wine:</strong> A selection of local craft IPAs, domestic lagers, Cabernet Sauvignon, and Chardonnay.</p>
+                <h4 class="font-bold text-xl brand-black mb-3">Service Area:</h4>
+                <p class="text-gray-700 mb-6">Proudly serving the greater Seattle area. Travel fees may apply for events beyond a 50-mile radius of downtown.</p>
+                <h4 class="font-bold text-xl brand-black mb-3">Insurance:</h4>
+                <p class="text-gray-700 mb-6">Jumpin' Jambalaya is fully licensed and carries general & liquor liability insurance.</p>
+                <h4 class="font-bold text-xl brand-black mb-3">Gratuity:</h4>
+                <p class="text-gray-700 mb-6">We offer flexible billing to suit your preference. Choose between a <strong>15% Tip Jar</strong> placed on the bar or a <strong>25% Flat Service Fee</strong> added to the final invoice.</p>
+                <h4 class="font-bold text-xl brand-black mb-3">Washington State Banquet Permit Notice:</h4>
+                <p class="text-gray-700">For events in public or rented venues, a Washington State Banquet Permit is required. This permit allows for alcohol to be served free of charge to your guests and must be posted at the event. The application is $10/day and can be completed online at: <a href="https://lcb.wa.gov/licensing/banquet-permits" target="_blank" class="text-brand-burgundy link-hover transition">lcb.wa.gov</a>.</p>
+            </div>
+        </section>
+
+        <!-- Booking Process -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold brand-black text-center mb-6">The Booking Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="p-4"><h3 class="font-bold text-lg brand-burgundy">1. Consultation</h3><p class="text-sm text-gray-600">We'll discuss your vision and needs.</p></div>
+                <div class="p-4"><h3 class="font-bold text-lg brand-burgundy">2. Custom Quote</h3><p class="text-sm text-gray-600">You'll receive a detailed quote for your event.</p></div>
+                <div class="p-4"><h3 class="font-bold text-lg brand-burgundy">3. Contract & Deposit</h3><p class="text-sm text-gray-600">Secure your date with a signed contract and deposit.</p></div>
+                <div class="p-4"><h3 class="font-bold text-lg brand-burgundy">4. Let's Party!</h3><p class="text-sm text-gray-600">We handle the rest.</p></div>
+            </div>
+        </section>
+
+        <!-- Footer & Contact -->
+        <footer class="text-center pt-8 border-t-2 border-gray-200">
+             <h2 class="text-3xl font-bold brand-black mb-4">Connect With Us</h2>
+             <p class="mb-6 text-gray-600">We look forward to crafting an unforgettable experience for your event!</p>
+             <div class="space-y-2 text-gray-700 mb-6">
+                 <p><strong>Email:</strong> <a href="mailto:merci@jumpinjambalaya.com" class="text-brand-burgundy link-hover transition">merci@jumpinjambalaya.com</a></p>
+                 <p><strong>Phone:</strong> (206) 771-7724</p>
+                 <p><strong>Web:</strong> <a href="http://jumpinjambalaya.com" class="text-brand-burgundy link-hover transition">jumpinjambalaya.com</a></p>
+             </div>
+             <p class="text-xl brand-black font-semibold mt-8">The Jumpin' Team</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
 
